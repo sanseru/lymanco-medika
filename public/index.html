@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LYMANCO MEDIKA - Penyedia layanan kesehatan modern dengan standar internasional. Layanan medical check-up, vaksinasi, corporate healthcare dan personal healthcare.">
+    <meta name="keywords" content="klinik, layanan kesehatan, medical check-up, vaksinasi, corporate healthcare, personal healthcare, Jakarta">
+    <meta name="author" content="LYMANCO MEDIKA">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="LYMANCO MEDIKA - Pelayanan Kesehatan Modern">
+    <meta property="og:description" content="Penyedia layanan kesehatan modern dengan standar internasional di Jakarta">
+    <meta property="og:image" content="https://lymancomedika.com/logo.png">
+    <meta property="og:url" content="https://lymancomedika.com">
+    
+    <title>LYMANCO MEDIKA - Pelayanan Kesehatan Modern</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#004D7F">
+    <meta name="msapplication-TileColor" content="#004D7F">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="/css/styles.min.css" as="style">
+    <link rel="preload" href="lymanco.png" as="image">
+    
+    <link href="/css/styles.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "LYMANCO MEDIKA",
+      "image": "https://lymancomedika.com/logo.png",
+      "description": "Penyedia layanan kesehatan modern dengan standar internasional",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Contoh No. 123",
+        "addressLocality": "Jakarta Selatan",
+        "addressRegion": "DKI Jakarta",
+        "postalCode": "12345",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -6.2088,
+        "longitude": 106.8456
+      },
+      "url": "https://lymancomedika.com",
+      "telephone": "+62-123-4567-890",
+      "email": "info@lymancomedika.com",
+      "medicalSpecialty": [
+        "Medical Check-up",
+        "Vaksinasi",
+        "Corporate Healthcare",
+        "Personal Healthcare"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary: #004D7F;
+            --secondary: #B51700;
+            --primary-light: #E5F0F9;
+            --primary-dark: #003B61;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        }
+
+        .nav-link {
+            position: relative;
+            padding-bottom: 2px;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .service-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .service-card:hover {
+            border-left-color: var(--secondary);
+            transform: translateX(10px);
+        }
+
+        .contact-card {
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header with improved navigation -->
+    <header class="fixed w-full bg-white bg-opacity-95 backdrop-blur-sm shadow-lg z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <img src="lymanco.png" alt="Logo LYMANCO MEDIKA" class="h-14">
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#hero"
+                        class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors">Beranda</a>
+                    <a href="#services"
+                        class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors">Layanan</a>
+                    <a href="#vision"
+                        class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors">Visi &
+                        Misi</a>
+                    <a href="#contact"
+                        class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors">Kontak</a>
+                </nav>
+                <button class="md:hidden text-[#004D7F]">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with dynamic elements -->
+    <section id="hero" class="pt-32 pb-24 gradient-bg">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-white mb-12 md:mb-0">
+                    <h1 class="text-5xl font-bold mb-8 leading-tight">
+                        Kesehatan Anda <span class="text-[#B51700]">Prioritas</span> Kami
+                    </h1>
+                    <p class="text-xl  mb-12 opacity-90 leading-relaxed">
+                        PT Megasains Internusa, melalui Klinik LYMANCO MEDIKA, hadir untuk memberikan pelayanan
+                        kesehatan modern yang mengutamakan kualitas dan kepuasan pasien. Kami berkomitmen untuk
+                        menyediakan layanan kesehatan terbaik dengan teknologi terkini dan tenaga medis profesional.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact"
+                            class="bg-[#B51700] hover:bg-[#8f1200] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            Hubungi Kami
+                        </a>
+                        <a href="#services"
+                            class="bg-white text-[#004D7F] font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:bg-gray-100">
+                            Layanan Kami
+                        </a>
+                        <a href="#why-choose-us"
+                            class="bg-[#004D7F] hover:bg-[#003366] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            Mengapa Memilih Kami?
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-[#B51700] opacity-10 rounded-full blur-3xl animate-pulse"></div>
+                        <img src="undraw_medicine_hqqg.svg" alt="Healthcare Illustration"
+                            class="relative z-10 animate-float">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features with enhanced visual design -->
+    <section id="why-choose-us" class="py-28 -mt-20">
+        <div class="container mx-auto px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-[#004D7F]">Mengapa Memilih Kami?</h2>
+                <p class="text-xl text-gray-600 mt-4">Kami menawarkan layanan kesehatan yang cepat, akurat, dan
+                    terjangkau untuk memenuhi kebutuhan Anda.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#004D7F] group">
+                    <div
+                        class="w-20 h-20 bg-[#E5F0F9] rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-[#004D7F] transition-colors duration-300">
+                        <i class="fas fa-bolt text-4xl text-[#004D7F] group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-[#004D7F]">CEPAT</h3>
+                    <p class="text-center text-gray-600 leading-relaxed">Didukung oleh teknologi modern dan sistem
+                        manajemen yang efisien untuk pelayanan optimal.</p>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#B51700] group">
+                    <div
+                        class="w-20 h-20 bg-[#FFE5E0] rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-[#B51700] transition-colors duration-300">
+                        <i class="fas fa-bullseye text-4xl text-[#B51700] group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-[#B51700]">AKURAT</h3>
+                    <p class="text-center text-gray-600 leading-relaxed">Ditangani oleh tim medis profesional dengan
+                        peralatan diagnostik terkini.</p>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#004D7F] group">
+                    <div
+                        class="w-20 h-20 bg-[#E5F0F9] rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-[#004D7F] transition-colors duration-300">
+                        <i class="fas fa-hand-holding-usd text-4xl text-[#004D7F] group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-[#004D7F]">TERJANGKAU</h3>
+                    <p class="text-center text-gray-600 leading-relaxed">Biaya pelayanan yang kompetitif dengan kualitas
+                        terbaik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section with improved cards -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#004D7F] mb-4">Layanan Unggulan Kami</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Kami menyediakan berbagai layanan kesehatan
+                    komprehensif untuk kebutuhan perusahaan dan individu.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-[#E5F0F9] rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-building text-[#004D7F] text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-[#004D7F]">Corporate Healthcare</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#B51700] mr-3"></i>
+                            <span>Layanan Screening Kesehatan Karyawan</span>
+                        </li>
+
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#B51700] mr-3"></i>
+                            <span>Layanan Screening Kesehatan Karyawan</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#B51700] mr-3"></i>
+                            <span>Layanan Klinik dalam Perusahaan</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#B51700] mr-3"></i>
+                            <span>Layanan Imboost dan Vaksinasi Karyawan</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#B51700] mr-3"></i>
+                            <span>Layanan Medevac dan Training K3</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#B51700] mr-3"></i>
+                            <span>Layanan Nakes/Dokter untuk Event Perusahaan</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#B51700] mr-3"></i>
+                            <span>Layanan Suntik Vaksin Miningitis</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-[#FFE5E0] rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-[#B51700] text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-[#B51700]">Personal Healthcare</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#004D7F] mr-3"></i>
+                            <span>Rujukan Dokter dan Faskes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#004D7F] mr-3"></i>
+                            <span>Layanan Screening Kesehatan Personal</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#004D7F] mr-3"></i>
+                            <span>Layanan Suntik Vaksinasi</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#004D7F] mr-3"></i>
+                            <span>Layanan Imboost dan Vital Cell Booster</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#004D7F] mr-3"></i>
+                            <span>Layanan Personal Homecare</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#004D7F] mr-3"></i>
+                            <span>Menyediakan Tim Medis & Ambulance</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-[#004D7F] mr-3"></i>
+                            <span>Layanan Kesehatan Lainnya</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision and Mission with dynamic design -->
+    <section id="vision" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="bg-[#E5F0F9] p-8 rounded-2xl relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-[#004D7F] opacity-10 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-6 text-[#004D7F]">Visi</h3>
+                        <p class="text-gray-700 relative z-10">Menjadi penyedia layanan kesehatan terpercaya dengan
+                            standar pelayanan internasional.</p>
+                    </div>
+
+                    <div class="bg-[#FFE5E0] p-8 rounded-2xl relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-[#B51700] opacity-10 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-6 text-[#B51700]">Misi</h3>
+                        <p class="text-gray-700 relative z-10">Menyelenggarakan pelayanan kesehatan berkualitas dengan
+                            pelayanan yang ramah dan responsif.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with improved cards -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-[#004D7F] mb-16">Hubungi Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="contact-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-16 h-16 bg-[#E5F0F9] rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-envelope text-2xl text-[#004D7F]"></i>
+                        </div>
+                        <h3 class="font-semibold text-[#004D7F] mb-2 text-center">Email</h3>
+                        <p class="text-center">info@lymancomedika.com</p>
+                    </div>
+                    <!-- Add remaining contact cards similarly -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with improved layout -->
+    <footer class="bg-[#004D7F] text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <img src="lymanco.png" alt="Logo LYMANCO MEDIKA" class="h-12 mb-6 brightness-200">
+                    <p class="text-sm text-gray-300">Memberikan pelayanan kesehatan berkualitas dengan standar
+                        internasional dan pelayanan yang ramah serta responsif.</p>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-[#003B61] rounded-full flex items-center justify-center hover:bg-[#B51700] transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-[#003B61] rounded-full flex items-center justify-center hover:bg-[#B51700] transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-[#003B61] rounded-full flex items-center justify-center hover:bg-[#B51700] transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-[#003B61] rounded-full flex items-center justify-center hover:bg-[#B51700] transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Layanan Utama</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#services"
+                                class="text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                Corporate Healthcare
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services"
+                                class="text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                Personal Healthcare
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services"
+                                class="text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                Medical Check-up
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#services"
+                                class="text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                Vaksinasi
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Informasi</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#"
+                                class="text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                Tentang Kami
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                Karir
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                Kebijakan Privasi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-gray-300 hover:text-white hover:translate-x-2 transition-all duration-300 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                Syarat & Ketentuan
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Kontak</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-[#B51700]"></i>
+                            <span class="text-gray-300">Jl. Contoh No. 123, Jakarta Selatan, DKI Jakarta 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-[#B51700]"></i>
+                            <span class="text-gray-300">+62 123 4567 890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-[#B51700]"></i>
+                            <span class="text-gray-300">info@lymancomedika.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-[#003B61] mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-300 text-sm">© 2025 LYMANCO MEDIKA. Semua hak dilindungi.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Kebijakan Privasi</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Syarat & Ketentuan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden" id="mobile-menu-overlay">
+        <div class="bg-white h-full w-64 transform translate-x-0 transition-transform duration-300">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-8">
+                    <img src="lymanco.png" alt="Logo" class="h-8">
+                    <button class="text-gray-500" id="close-mobile-menu">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                <nav class="space-y-4">
+                    <a href="#hero"
+                        class="block text-gray-800 hover:text-[#004D7F] py-2 border-b border-gray-100">Beranda</a>
+                    <a href="#services"
+                        class="block text-gray-800 hover:text-[#004D7F] py-2 border-b border-gray-100">Layanan</a>
+                    <a href="#vision"
+                        class="block text-gray-800 hover:text-[#004D7F] py-2 border-b border-gray-100">Visi & Misi</a>
+                    <a href="#contact" class="block text-gray-800 hover:text-[#004D7F] py-2">Kontak</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        const mobileMenu = document.getElementById('mobile-menu-overlay');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    mobileMenu.classList.add('hidden');
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add shadow to header on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+
+</html>

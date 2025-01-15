@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYMANCO MEDIKA - Pelayanan Kesehatan Modern</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .feature {
+            @apply flex flex-col items-center p-8 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+        }
+        
+        .cta-button {
+            @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Sticky Header -->
+    <header class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm shadow-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="lymanco.png" alt="Logo LYMANCO MEDIKA" class="h-12">
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="#hero" class="font-medium hover:text-blue-600 transition-colors">Beranda</a></li>
+                    <li><a href="#services" class="font-medium hover:text-blue-600 transition-colors">Layanan</a></li>
+                    <li><a href="#vision" class="font-medium hover:text-blue-600 transition-colors">Visi & Misi</a></li>
+                    <li><a href="#contact" class="font-medium hover:text-blue-600 transition-colors">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-28 pb-20 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-white mb-10 md:mb-0">
+                    <h1 class="text-5xl font-bold mb-6 leading-tight animate-fade-in">PT Megasains Internusa, melalui Klinik LYMANCO MEDIKA</h1>
+                    <p class="text-xl mb-8 opacity-90">Hadir untuk memberikan pelayanan kesehatan yang mengutamakan kecepatan, ketepatan, dan keterjangkauan.</p>
+                    <a href="#contact" class="cta-button bg-white text-blue-600 hover:bg-gray-100">Hubungi Kami</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="undraw_medicine_hqqg.svg" alt="Healthcare Illustration" class="rounded-lg shadow-2xl animate-fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-24 -mt-20">
+        <div class="container mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="feature bg-white p-8 rounded-2xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.15)] transform hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                    <div class="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 mx-auto transform rotate-12 hover:rotate-0 transition-transform duration-300">
+                        <i class="fas fa-bolt text-4xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-gray-800">CEPAT</h3>
+                    <p class="text-center text-gray-600 leading-relaxed">Didukung oleh Teknologi yang Berkualitas</p>
+                </div>
+
+                <div class="feature bg-white p-8 rounded-2xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.15)] transform hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                    <div class="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 mx-auto transform rotate-12 hover:rotate-0 transition-transform duration-300">
+                        <i class="fas fa-bullseye text-4xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-gray-800">AKURAT</h3>
+                    <p class="text-center text-gray-600 leading-relaxed">Dengan Peralatan & Tenaga Medis yang Profesional</p>
+                </div>
+
+                <div class="feature bg-white p-8 rounded-2xl shadow-[0_20px_50px_rgba(8,_112,_184,_0.07)] hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.15)] transform hover:-translate-y-2 transition-all duration-300 border border-gray-100">
+                    <div class="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 mx-auto transform rotate-12 hover:rotate-0 transition-transform duration-300">
+                        <i class="fas fa-hand-holding-usd text-4xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-gray-800">TERJANGKAU</h3>
+                    <p class="text-center text-gray-600 leading-relaxed">Harga yang Kompetitif</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section with improved layout -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-blue-600 mb-4">Mengapa Memilih Kami</h2>
+            <p class="text-xl text-center text-gray-600 mb-12">Kami berupaya menghadirkan pelayanan kesehatan yang cepat, tepat dan akurat bagi mitra kerja</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service cards with hover effects -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h4 class="text-xl font-semibold mb-4 text-blue-600">Layanan Corporate Healthcare</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Screening Kesehatan Karyawan</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Klinik dalam Perusahaan</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Imboost dan Vaksinasi Karyawan</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Medevac dan Training K3</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Nakes/Dokter untuk Event Perusahaan</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Suntik Vaksin Miningitis</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <h4 class="text-xl font-semibold mb-4 text-blue-600">Layanan Personal Healthcare</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Rujukan Dokter dan Faskes</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Screening Kesehatan Personal</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Suntik Vaksinasi</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Imboost dan Vital Cell Booster</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Personal Homecare</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Menyediakan Tim Medis & Ambulance</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Layanan Kesehatan Lainnya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision and Mission -->
+    <section id="vision" class="bg-gray-100 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-blue-600">Visi & Misi</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Visi</h3>
+                    <p class="text-gray-700">Memberikan pelayanan kesehatan yang cepat, akurat dan terjangkau.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Misi</h3>
+                    <p class="text-gray-700">Menyelenggarakan pelayanan kesehatan yang berkualitas dengan pelayan ramah dan responsif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-12 text-blue-600">Hubungi Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="p-6 bg-gray-100 rounded-xl shadow-lg">
+                        <i class="fas fa-envelope text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="font-semibold mb-2">Email</h3>
+                        <p>info@lymancomedika.com</p>
+                    </div>
+                    <div class="p-6 bg-gray-100 rounded-xl shadow-lg">
+                        <i class="fas fa-phone text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="font-semibold mb-2">Telepon</h3>
+                        <p>+62 123 4567 890</p>
+                    </div>
+                    <div class="p-6 bg-gray-100 rounded-xl shadow-lg">
+                        <i class="fas fa-map-marker-alt text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="font-semibold mb-2">Alamat</h3>
+                        <p>Jl. Contoh No. 123, Jakarta</p>
+                    </div>
+                </div>
+                <a href="mailto:info@lymancomedika.com" class="cta-button inline-flex items-center">
+                    <i class="fas fa-envelope mr-2"></i> Kirim Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with more information -->
+    <footer class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="lymanco.png" alt="Logo LYMANCO MEDIKA" class="h-12 mb-4">
+                    <p class="text-sm opacity-80">Memberikan pelayanan kesehatan yang berkualitas dengan pelayan ramah dan responsif.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Layanan</h3>
+                    <ul>
+                        <li><a href="#services" class="hover:underline">Corporate Healthcare</a></li>
+                        <li><a href="#services" class="hover:underline">Personal Healthcare</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Kontak</h3>
+                    <ul>
+                        <li><a href="mailto:info@lymancomedika.com" class="hover:underline">Email</a></li>
+                        <li><a href="tel:+621234567890" class="hover:underline">Telepon</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:opacity-75"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:opacity-75"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:opacity-75"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:opacity-75"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-500 mt-8 pt-8 text-center">
+                <p>© 2025 LYMANCO MEDIKA. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
