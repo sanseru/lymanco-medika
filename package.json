@@ -14,8 +14,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.2",
-    "helmet": "^8.0.0",
-    "xss-clean": "^0.1.4"
+    "helmet": "^8.0.0"
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
