@@ -10,17 +10,17 @@
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="LYMANCO MEDIKA - Pelayanan Kesehatan Modern">
     <meta property="og:description" content="Penyedia layanan kesehatan modern dengan standar internasional di Jakarta">
-    <meta property="og:image" content="https://lymancomedika.com/logo.png">
+    <meta property="og:image" content="https://lymancomedika.com/assets/images/lymanco.png">
     <meta property="og:url" content="https://lymancomedika.com">
     
     <title>LYMANCO MEDIKA - Pelayanan Kesehatan Modern</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#004D7F">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#004D7F">
     <meta name="msapplication-TileColor" content="#004D7F">
     <meta name="theme-color" content="#ffffff">
     
@@ -28,10 +28,10 @@
     <meta http-equiv="Cache-Control" content="max-age=31536000">
     
     <!-- Preload Critical Resources -->
-    <link rel="preload" href="/css/styles.min.css" as="style">
-    <link rel="preload" href="lymanco.png" as="image">
+    <link rel="preload" href="css/styles.min.css" as="style">
+    <link rel="preload" href="assets/images/lymanco.png" as="image">
     
-    <link href="/css/styles.min.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Schema Markup -->
@@ -40,7 +40,7 @@
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
       "name": "LYMANCO MEDIKA",
-      "image": "https://lymancomedika.com/logo.png",
+      "image": "https://lymancomedika.com/assets/images/lymanco.png",
       "description": "Penyedia layanan kesehatan modern dengan standar internasional",
       "address": {
         "@type": "PostalAddress",
@@ -79,82 +79,6 @@
       }
     }
     </script>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
-
-        :root {
-            --primary: #004D7F;
-            --secondary: #B51700;
-            --primary-light: #E5F0F9;
-            --primary-dark: #003B61;
-        }
-
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-20px);
-            }
-
-            100% {
-                transform: translateY(0px);
-            }
-        }
-
-        .gradient-bg {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-        }
-
-        .nav-link {
-            position: relative;
-            padding-bottom: 2px;
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: var(--primary);
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
-        .service-card {
-            transition: all 0.3s ease;
-            border-left: 4px solid transparent;
-        }
-
-        .service-card:hover {
-            border-left-color: var(--secondary);
-            transform: translateX(10px);
-        }
-
-        .contact-card {
-            transition: all 0.3s ease;
-        }
-
-        .contact-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-        }
-    </style>
 </head>
 
 <body class="bg-gray-50">
@@ -162,19 +86,14 @@
     <header class="fixed w-full bg-white bg-opacity-95 backdrop-blur-sm shadow-lg z-50">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
-                <img src="lymanco.png" alt="Logo LYMANCO MEDIKA" class="h-14">
+                <img src="assets/images/lymanco.png" alt="Logo LYMANCO MEDIKA" class="h-14">
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#hero"
-                        class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors">Beranda</a>
-                    <a href="#services"
-                        class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors">Layanan</a>
-                    <a href="#vision"
-                        class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors">Visi &
-                        Misi</a>
-                    <a href="#contact"
-                        class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors">Kontak</a>
+                    <a href="#hero" class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors duration-300 ease-in-out">Beranda</a>
+                    <a href="#services" class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors duration-300 ease-in-out">Layanan</a>
+                    <a href="#vision" class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors duration-300 ease-in-out">Visi & Misi</a>
+                    <a href="#contact" class="nav-link text-gray-700 font-medium hover:text-[#004D7F] transition-colors duration-300 ease-in-out">Kontak</a>
                 </nav>
-                <button class="md:hidden text-[#004D7F]">
+                <button class="md:hidden text-[#004D7F]" aria-label="Open navigation menu">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
@@ -182,29 +101,27 @@
     </header>
 
     <!-- Hero Section with dynamic elements -->
-    <section id="hero" class="pt-32 pb-24 gradient-bg">
+    <section id="hero" class="pt-32 pb-24 gradient-bg relative">
+        <div class="wave"></div>
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="md:w-1/2 text-white mb-12 md:mb-0">
-                    <h1 class="text-5xl font-bold mb-8 leading-tight">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 md:mb-8 leading-tight">
                         Kesehatan Anda <span class="text-[#B51700]">Prioritas</span> Kami
                     </h1>
-                    <p class="text-xl  mb-12 opacity-90 leading-relaxed">
+                    <p class="text-lg md:text-xl mb-8 md:mb-12 opacity-90 leading-relaxed">
                         PT Megasains Internusa, melalui Klinik LYMANCO MEDIKA, hadir untuk memberikan pelayanan
                         kesehatan modern yang mengutamakan kualitas dan kepuasan pasien. Kami berkomitmen untuk
                         menyediakan layanan kesehatan terbaik dengan teknologi terkini dan tenaga medis profesional.
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="#contact"
-                            class="bg-[#B51700] hover:bg-[#8f1200] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-[#B51700] hover:bg-[#8f1200] text-white font-semibold py-3 px-6 md:px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
                             Hubungi Kami
                         </a>
-                        <a href="#services"
-                            class="bg-white text-[#004D7F] font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:bg-gray-100">
+                        <a href="#services" class="bg-white text-[#004D7F] font-semibold py-3 px-6 md:px-8 rounded-full transition-all duration-300 transform hover:scale-105 hover:bg-gray-100">
                             Layanan Kami
                         </a>
-                        <a href="#why-choose-us"
-                            class="bg-[#004D7F] hover:bg-[#003366] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        <a href="#why-choose-us" class="bg-[#004D7F] hover:bg-[#003366] text-white font-semibold py-3 px-6 md:px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
                             Mengapa Memilih Kami?
                         </a>
                     </div>
@@ -212,8 +129,7 @@
                 <div class="md:w-1/2">
                     <div class="relative">
                         <div class="absolute inset-0 bg-[#B51700] opacity-10 rounded-full blur-3xl animate-pulse"></div>
-                        <img src="undraw_medicine_hqqg.svg" alt="Healthcare Illustration"
-                            class="relative z-10 animate-float">
+                        <img src="assets/images/undraw_medicine_hqqg.svg" alt="Healthcare Illustration" class="relative z-10 animate-float hover:scale-105 transition-transform duration-300">
                     </div>
                 </div>
             </div>
@@ -224,46 +140,38 @@
     <section id="why-choose-us" class="py-28 -mt-20">
         <div class="container mx-auto px-8">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-[#004D7F]">Mengapa Memilih Kami?</h2>
-                <p class="text-xl text-gray-600 mt-4">Kami menawarkan layanan kesehatan yang cepat, akurat, dan
-                    terjangkau untuk memenuhi kebutuhan Anda.</p>
+                <h2 class="text-4xl md:text-5xl font-bold text-[#004D7F] leading-tight">Mengapa Memilih Kami?</h2>
+                <p class="text-lg md:text-xl text-gray-600 mt-4 leading-relaxed">Kami menawarkan layanan kesehatan yang cepat, akurat, dan terjangkau untuk memenuhi kebutuhan Anda.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#004D7F] group">
-                    <div
-                        class="w-20 h-20 bg-[#E5F0F9] rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-[#004D7F] transition-colors duration-300">
-                        <i class="fas fa-bolt text-4xl text-[#004D7F] group-hover:text-white"></i>
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#004D7F] group transform hover:scale-105">
+                    <div class="w-20 h-20 bg-[#E5F0F9] rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-[#004D7F] transition-colors duration-300">
+                        <i class="fas fa-bolt text-4xl text-[#004D7F] group-hover:text-white transition-transform duration-300 transform group-hover:rotate-12"></i>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-center text-[#004D7F]">CEPAT</h3>
-                    <p class="text-center text-gray-600 leading-relaxed">Didukung oleh teknologi modern dan sistem
-                        manajemen yang efisien untuk pelayanan optimal.</p>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4 text-center text-[#004D7F] leading-tight">CEPAT</h3>
+                    <p class="text-center text-gray-600 leading-relaxed">Didukung oleh teknologi modern dan sistem manajemen yang efisien untuk pelayanan optimal.</p>
                 </div>
-
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#B51700] group">
-                    <div
-                        class="w-20 h-20 bg-[#FFE5E0] rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-[#B51700] transition-colors duration-300">
-                        <i class="fas fa-bullseye text-4xl text-[#B51700] group-hover:text-white"></i>
+    
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#B51700] group transform hover:scale-105">
+                    <div class="w-20 h-20 bg-[#FFE5E0] rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-[#B51700] transition-colors duration-300">
+                        <i class="fas fa-bullseye text-4xl text-[#B51700] group-hover:text-white transition-transform duration-300 transform group-hover:rotate-12"></i>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-center text-[#B51700]">AKURAT</h3>
-                    <p class="text-center text-gray-600 leading-relaxed">Ditangani oleh tim medis profesional dengan
-                        peralatan diagnostik terkini.</p>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4 text-center text-[#B51700] leading-tight">AKURAT</h3>
+                    <p class="text-center text-gray-600 leading-relaxed">Ditangani oleh tim medis profesional dengan peralatan diagnostik terkini.</p>
                 </div>
-
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#004D7F] group">
-                    <div
-                        class="w-20 h-20 bg-[#E5F0F9] rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-[#004D7F] transition-colors duration-300">
-                        <i class="fas fa-hand-holding-usd text-4xl text-[#004D7F] group-hover:text-white"></i>
+    
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#004D7F] group transform hover:scale-105">
+                    <div class="w-20 h-20 bg-[#E5F0F9] rounded-2xl flex items-center justify-center mb-8 mx-auto group-hover:bg-[#004D7F] transition-colors duration-300">
+                        <i class="fas fa-hand-holding-usd text-4xl text-[#004D7F] group-hover:text-white transition-transform duration-300 transform group-hover:rotate-12"></i>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4 text-center text-[#004D7F]">TERJANGKAU</h3>
-                    <p class="text-center text-gray-600 leading-relaxed">Biaya pelayanan yang kompetitif dengan kualitas
-                        terbaik.</p>
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4 text-center text-[#004D7F] leading-tight">TERJANGKAU</h3>
+                    <p class="text-center text-gray-600 leading-relaxed">Biaya pelayanan yang kompetitif dengan kualitas terbaik.</p>
                 </div>
             </div>
         </div>
     </section>
+
+
     <!-- Services Section with improved cards -->
     <section id="services" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
@@ -356,58 +264,108 @@
         </div>
     </section>
 
-    <!-- Vision and Mission with dynamic design -->
-    <section id="vision" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-12">
-                    <div class="bg-[#E5F0F9] p-8 rounded-2xl relative overflow-hidden group">
-                        <div
-                            class="absolute top-0 right-0 w-32 h-32 bg-[#004D7F] opacity-10 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500">
-                        </div>
-                        <h3 class="text-2xl font-semibold mb-6 text-[#004D7F]">Visi</h3>
-                        <p class="text-gray-700 relative z-10">Menjadi penyedia layanan kesehatan terpercaya dengan
-                            standar pelayanan internasional.</p>
+  <!-- Vision and Mission with dynamic design -->
+<section id="vision" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-[#E5F0F9] p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#004D7F] opacity-10 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-eye text-4xl text-[#004D7F] mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-[#004D7F]">Visi</h3>
                     </div>
+                    <p class="text-gray-700 relative z-10 mb-4">Menjadi penyedia layanan kesehatan terpercaya dengan
+                        standar pelayanan internasional.</p>
+                    <ul class="list-disc list-inside text-gray-700 relative z-10">
+                        <li>Memberikan pelayanan kesehatan terbaik</li>
+                        <li>Mengutamakan kepuasan pasien</li>
+                        <li>Menggunakan teknologi terkini</li>
+                    </ul>
+                </div>
 
-                    <div class="bg-[#FFE5E0] p-8 rounded-2xl relative overflow-hidden group">
-                        <div
-                            class="absolute top-0 right-0 w-32 h-32 bg-[#B51700] opacity-10 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500">
-                        </div>
-                        <h3 class="text-2xl font-semibold mb-6 text-[#B51700]">Misi</h3>
-                        <p class="text-gray-700 relative z-10">Menyelenggarakan pelayanan kesehatan berkualitas dengan
-                            pelayanan yang ramah dan responsif.</p>
+                <div class="bg-[#FFE5E0] p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-[#B51700] opacity-10 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500"></div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-bullseye text-4xl text-[#B51700] mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-[#B51700]">Misi</h3>
                     </div>
+                    <p class="text-gray-700 relative z-10 mb-4">Menyelenggarakan pelayanan kesehatan berkualitas dengan
+                        pelayanan yang ramah dan responsif.</p>
+                    <ul class="list-disc list-inside text-gray-700 relative z-10">
+                        <li>Memberikan pelayanan yang ramah</li>
+                        <li>Responsif terhadap kebutuhan pasien</li>
+                        <li>Menjaga kualitas pelayanan</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section with improved cards -->
     <section id="contact" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-4xl font-bold text-center text-[#004D7F] mb-16">Hubungi Kami</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <h2 class="text-4xl font-bold text-center text-[#004D7F] mb-12">Hubungi Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                     <div class="contact-card bg-white p-6 rounded-xl shadow-lg">
-                        <div class="w-16 h-16 bg-[#E5F0F9] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-16 h-16 bg-[#E5F0F9] rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="fas fa-envelope text-2xl text-[#004D7F]"></i>
                         </div>
                         <h3 class="font-semibold text-[#004D7F] mb-2 text-center">Email</h3>
                         <p class="text-center">info@lymancomedika.com</p>
                     </div>
-                    <!-- Add remaining contact cards similarly -->
+                    <div class="contact-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-16 h-16 bg-[#E5F0F9] rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-phone text-2xl text-[#004D7F]"></i>
+                        </div>
+                        <h3 class="font-semibold text-[#004D7F] mb-2 text-center">Telepon</h3>
+                        <p class="text-center">+62 123 4567 890</p>
+                    </div>
+                    <div class="contact-card bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-16 h-16 bg-[#E5F0F9] rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-map-marker-alt text-2xl text-[#004D7F]"></i>
+                        </div>
+                        <h3 class="font-semibold text-[#004D7F] mb-2 text-center">Alamat</h3>
+                        <p class="text-center">Jl. Contoh No. 123, Jakarta, Indonesia</p>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <iframe class="w-full h-64 rounded-xl shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.920065839123!2d-122.0842496846927!3d37.42199977982571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e0b1b1b1b1%3A0x1b1b1b1b1b1b1b1b!2sGoogleplex!5e0!3m2!1sen!2sus!4v1633021234567!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
     </section>
+
+<!-- Clients Section with hover effect -->
+<section id="clients" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-[#004D7F] mb-16">Klien Kami</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="client-logo grayscale hover:grayscale-0 transition-all duration-300">
+                <img src="assets/images/lymanco.png" alt="Client 1" class="w-full h-auto">
+            </div>
+            <div class="client-logo grayscale hover:grayscale-0 transition-all duration-300">
+                <img src="assets/images/lymanco.png" alt="Client 2" class="w-full h-auto">
+            </div>
+            <div class="client-logo grayscale hover:grayscale-0 transition-all duration-300">
+                <img src="assets/images/lymanco.png" alt="Client 3" class="w-full h-auto">
+            </div>
+            <div class="client-logo grayscale hover:grayscale-0 transition-all duration-300">
+                <img src="assets/images/lymanco.png" alt="Client 4" class="w-full h-auto">
+            </div>
+            <!-- Add more client logos as needed -->
+        </div>
+    </div>
+</section>
 
     <!-- Footer with improved layout -->
     <footer class="bg-[#004D7F] text-white py-12">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
-                    <img src="lymanco.png" alt="Logo LYMANCO MEDIKA" class="h-12 mb-6 brightness-200">
+                    <img src="assets/images/lymanco.png" alt="Logo LYMANCO MEDIKA" class="h-12 mb-6 brightness-200">
                     <p class="text-sm text-gray-300">Memberikan pelayanan kesehatan berkualitas dengan standar
                         internasional dan pelayanan yang ramah serta responsif.</p>
                     <div class="mt-6 flex space-x-4">
@@ -534,7 +492,7 @@
         <div class="bg-white h-full w-64 transform translate-x-0 transition-transform duration-300">
             <div class="p-6">
                 <div class="flex justify-between items-center mb-8">
-                    <img src="lymanco.png" alt="Logo" class="h-8">
+                    <img src="assets/images/lymanco.png" alt="Logo" class="h-8">
                     <button class="text-gray-500" id="close-mobile-menu">
                         <i class="fas fa-times text-2xl"></i>
                     </button>
